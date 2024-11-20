@@ -1,4 +1,5 @@
-import { useEffect, useState } from 'react'
+/* eslint-disable react/prop-types */
+
 import Stone from '../../assets/StonePaperScissor/Stone.png'
 import paper from '../../assets/StonePaperScissor/paper.png'
 import scissor from '../../assets/StonePaperScissor/scissor.png'

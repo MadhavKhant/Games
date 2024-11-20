@@ -10,7 +10,7 @@ const StonePaperScissor = () => {
 
     let bgUrl = "https://wallpapers.com/images/hd/watch-dogs-2-8k-gaming-pnq28mzj1d0t2rid.jpg"
 
-    const [val, Setval] = useState(null);
+    // const [val, Setval] = useState(null);
     const [winner, Setwinner] = useState(0);
     const [winnerText, SetwinnerText] = useState(null);
     const [Timer, SetTimer] = useState(false);
@@ -23,10 +23,10 @@ const StonePaperScissor = () => {
       {combo: [1, 3, 1]},
     ]
 
-    const X = (winningCombinations, x, val) => {
+    const X = (winningCombinations, x, value) => {
       SetTimer(false);
 
-      if(x === val)
+      if(x === value)
       {
         SetwinnerText('tie');
         SetEndGame(true);
@@ -37,14 +37,14 @@ const StonePaperScissor = () => {
       {
         for(let {combo} of winningCombinations)
         {
-          if(val === combo[0] && x === combo[1])
+          if(value === combo[0] && x === combo[1])
           {
             Setwinner(1);
             SetwinnerText("You");
             SetEndGame(true);
             break;
           }  
-          else if(x === combo[0] && val === combo[1])
+          else if(x === combo[0] && value === combo[1])
           {
             Setwinner(-1);
             SetwinnerText("Compute");
@@ -57,10 +57,10 @@ const StonePaperScissor = () => {
 
     }
 
-    const Clickhandler = (val) => {
-      Setval(val);
+    const Clickhandler = (value) => {
+      //Setval(value);
       let x = Math.floor(Math.random() * 3) + 1;
-      console.log("val: " + val);
+      console.log("val: " + value);
       console.log("x:: "+ x);
 
       SetComputerValue(x);
@@ -70,7 +70,7 @@ const StonePaperScissor = () => {
 
       SetTimer(true);
       setTimeout(() => {
-        X(winningCombinations, x, val);
+        X(winningCombinations, x, value);
       }, 3000)
 
     }
@@ -135,10 +135,13 @@ const StonePaperScissor = () => {
       </div>
 
 
-      <div className="px-12 py-2 rounded-md border-[1.2px] mx-auto font-bold text-[25px]
-       border-yellow-600 text-white bg-gray-800 w-fit">
-        Winner: {winnerText}
-      </div>
+      {
+        EndGame && 
+        <div className="px-12 py-2 rounded-md border-[1.2px] mx-auto font-bold text-[25px]
+        border-yellow-600 text-white bg-gray-800 w-fit">
+          Winner: {winnerText}
+        </div>
+      }
         
 
     </div>
