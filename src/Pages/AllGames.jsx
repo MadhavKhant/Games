@@ -1,7 +1,5 @@
 import { Link } from 'react-router-dom'
-import TicTacToeImage from '../assets/TicTacToe/TTT2-Photoroom.png'
-import sps from '../assets/StonePaperScissor/sps.png'
-import iceland from '../assets/bg/iceland.jpg'
+import iceland from '../assets/bg/Iceland.jpg'
 import HomeStonePaperScissorImage from '../assets/StonePaperScissor/homesps.png'
 import TTT2 from '../assets/TicTacToe/TTT.png'
 
