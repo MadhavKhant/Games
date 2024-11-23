@@ -68,7 +68,7 @@ const AllGames = () => {
             {/* Text to Image Link */}
             <div className="sine-wave relative rounded-full">
                 <Link
-                    to="/StonePaperScissoroImage"
+                    to="/StonePaperScissor"
                     style={{
                     backgroundImage: `url(${StonePaperScissorImage})`,
                     backgroundSize: "cover",
