@@ -1,8 +1,8 @@
 import { Route, Routes } from 'react-router-dom'
 import './App.css'
-import AllGames from './AllGames/AllGames'
-import TicTacToe from './AllGames/TicTacToe/TicTacToe'
-import StonePaperScissor from './AllGames/StonePaperScissor/StonePaperScissor'
+import AllGames from './Pages/AllGames'
+import TicTacToe from './Pages/TicTacToe'
+import StonePaperScissor from './Pages/StonePaperScissor'
 
 function App() {
 

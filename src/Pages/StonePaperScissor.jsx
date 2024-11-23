@@ -1,14 +1,15 @@
 import { Link } from "react-router-dom"
-import Stone from '../../assets/StonePaperScissor/Stone.png'
-import PaperImage from '../../assets/StonePaperScissor/paper.png'
-import ScissorImage from '../../assets/StonePaperScissor/scissor.png'
+import Stone from '../assets/StonePaperScissor/Stone.png'
+import PaperImage from '../assets/StonePaperScissor/paper.png'
+import ScissorImage from '../assets/StonePaperScissor/scissor.png'
 import { useState } from "react"
-import Countdown from "./CountDown"
-import ComputerImage from "./ComputerImage"
+import Countdown from "../AllGamesComponents/StonePaperScissor/CountDown"
+import ComputerImage from "../AllGamesComponents/StonePaperScissor/ComputerImage"
+import spsWallpaper from '../assets/bg/spswallper.jpg'
 
 const StonePaperScissor = () => {
 
-    let bgUrl = "https://wallpapers.com/images/hd/watch-dogs-2-8k-gaming-pnq28mzj1d0t2rid.jpg"
+    let bgUrl = spsWallpaper
 
     // const [val, Setval] = useState(null);
     const [winner, Setwinner] = useState(0);

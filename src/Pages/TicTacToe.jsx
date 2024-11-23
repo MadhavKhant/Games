@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react"
 import { Link } from "react-router-dom"
-import Board from "./TicTacToeComponents/Board";
+import Board from "../AllGamesComponents/TicTacToe/Board";
 
 const TicTacToe = () => {
 
