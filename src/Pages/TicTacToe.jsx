@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react"
 import { Link } from "react-router-dom"
 import Board from "../AllGamesComponents/TicTacToe/Board";
+import bgofTTT from '../assets/TicTacToe/bgofTTT.jpg'
 
 const TicTacToe = () => {
 
@@ -76,7 +77,7 @@ const TicTacToe = () => {
         winnerFind(winnerCombinations, tiles)
     }, [tiles])
 
-    let bgUrl = "https://wallpapers-hub.art/wallpaper-images/426741.jpg"
+    let bgUrl = bgofTTT;
 
 
   return (
@@ -133,9 +134,9 @@ const TicTacToe = () => {
 
         <button
             onClick={() => ResetGame()}
-            className="text-white bg-gradient-to-r from-green-400 via-green-500 to-green-600 
-            hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-green-300 dark:focus:ring-green-800 
-            font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2 translate-x-[1700%] translate-y-[80px]"
+            className="text-white bg-green-400
+            hover:bg-blue-500
+             rounded-lg text-sm px-5 py-2.5 text-center  translate-x-[1700%] translate-y-[80px]"
         >
             Reset
         </button>
