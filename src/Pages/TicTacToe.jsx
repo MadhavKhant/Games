@@ -134,10 +134,10 @@ const TicTacToe = () => {
 
         <div
             onClick={() => ResetGame()}
-            className="text-white bg-green-400 hover:bg-blue-500 
+            className="text-gray-500 font-bold text-lg bg-green-400 hover:bg-blue-500 
                 hover:cursor-pointer transition-all duration-200 hover:scale-90 hover:text-black
-                rounded-lg text-sm w-fit h-fit
-                px-5 py-2.5 text-center  translate-x-[1700%] translate-y-[80px]"
+                rounded-lg w-fit h-fit ml-[670px] mt-[100px]
+                px-6 py-2 text-center "
         >
             Reset
         </div>
